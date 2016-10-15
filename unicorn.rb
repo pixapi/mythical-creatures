@@ -1,12 +1,22 @@
 class Unicorn
-    def initialize(name)
-        @name = name
-    end
+  def initialize(name, color = "white")
+    @name = name
+    @color = color
+  end
 
-    def name
-        @name
-    end
+  def name
+    @name
+  end
 
-    def color
-        
+  def color
+    @color
+  end
+
+  def white?
+    @color == "white"
+  end
+
+  def say(opinion)
+    "**;* #{opinion} **;*"
+  end
 end
